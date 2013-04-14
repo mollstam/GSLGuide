@@ -1,0 +1,18 @@
+<h2><%= @event.name %></h2>
+<p class="match_data">
+    <span title="<%= @event.date %>"><%= distance_of_time_in_words(@event.date, Time.now) %> ago</span>
+</p>
+<ul id="matches">
+    <% players = nil %>
+<% @event.match_sets.each do |set| %>
+    <% if set != @event.match_sets.first && players != set.players %>
+    <br><br>
+    <% end %>
+    <%
+        players = set.players
+    %>
+    <li>
+        <%= match_set_rating_bars(set) %>
+    </li>
+<% end %>
+</ul>

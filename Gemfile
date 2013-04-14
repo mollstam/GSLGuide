@@ -24,6 +24,9 @@ end
 
 gem 'jquery-rails'
 gem 'country-select', git: 'git://github.com/mollstam/country-select.git'
+gem 'nokogiri'
+gem 'sqlite3'
+
 # gem 'gelf', git: 'git://github.com/mollstam/gelf-rb.git'
 # gem 'activemerchant', git: 'git://github.com/Shopify/active_merchant.git'
 

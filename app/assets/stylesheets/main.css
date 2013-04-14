@@ -1,0 +1,14 @@
+body { margin: 20px; font-family: 'Helvetica Neue', Helvetica, sans-serif; font-weight: 300; }
+h1, h2, h3 { font-weight: 300; }
+
+a { color: #2480c7; }
+a:hover { color: #46abf8; }
+
+ul#matches { list-style-type: none; padding:0; }
+
+.match_data { color:#777; font-size:12px; }
+
+.rating_bars a { display: inline-block; height:20px; }
+.rating_bars .yellow { background-color: #fada28;}
+.rating_bars .green { background-color: #88C100;}
+.rating_bars .red { background-color: #FF003C;}
